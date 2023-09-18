@@ -1,27 +1,28 @@
-# React + TypeScript + Vite
+Overview
+This project is built using Vite (with React), TypeScript, Tailwind CSS, React Router, and Framer Motion. These technologies were chosen for their efficiency, scalability, and developer-friendly features. This README provides an overview of the architectural choices made in this project and instructions on how to run it.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Architectural Choices
 
-Currently, two official plugins are available:
+1. Vite (with React)
+   Vite is a build tool that offers fast, efficient front-end development. It provides lightning-fast build times by leveraging native ES module imports and other modern web standards. Coupled with React, it enables a seamless development experience with efficient hot module replacement.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. TypeScript
+   TypeScript is a superset of JavaScript that adds static typing to your code. It improves code quality and helps catch bugs at compile time. With TypeScript, you get better tooling support and improved developer experience.
 
-## Expanding the ESLint configuration
+3. Tailwind CSS
+   Tailwind CSS is a utility-first CSS framework that provides a set of low-level utility classes to build designs directly in your markup. It promotes a highly maintainable and scalable way of styling applications.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+4. React Router
+   React Router is a standard library for routing in React applications. It enables dynamic routing by allowing you to declare routes in a declarative manner. This helps in building Single Page Applications (SPAs) with seamless navigation.
 
-- Configure the top-level `parserOptions` property like this:
+5. Framer Motion
+   Framer Motion is a popular animation library for React. It provides a simple and intuitive API for creating animations and gestures. This library was chosen to add engaging animations to the project.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+How to Run the Project
+To run this project, follow these steps:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Install Dependencies:
+npm install
+
+Start the Development Server:
+npm run dev
