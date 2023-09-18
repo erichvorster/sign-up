@@ -29,3 +29,19 @@
     background:var(--yellow);
     transform-origin: top;
 }
+
+input[type=radio] {
+    accent-color: var(--yellow) !important;
+    border-color: #FFF;
+}
+input[type=checkbox] {
+    accent-color: var(--yellow) !important;
+    border-color: #FFF;
+}
+
+/* CSS code */
+input:-webkit-autofill {
+    background-color: #f5f5f5; 
+    box-shadow: 0 0 0 1000px #f5f5f5 inset; 
+   
+}
